@@ -48,7 +48,7 @@ const AnimatedTextSlider = () => {
   }, [displayedText, isDeleting, currentTextIndex, texts])
 
   return (
-    <section id="hero" className="animated-text-section">
+    <section id="hero" className="animated-text-section section">
       <div className="container">
         <div className="text-slider-container">
           <motion.div
@@ -68,28 +68,6 @@ const AnimatedTextSlider = () => {
               </motion.span>
             </h1>
             
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="subtitle"
-            >
-              Experience the future of filmmaking with our redesigned platform
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="cta-buttons"
-            >
-              <button className="btn btn-primary">
-                Get Started
-              </button>
-              <button className="btn btn-glass">
-                Learn More
-              </button>
-            </motion.div>
           </motion.div>
 
           <motion.div

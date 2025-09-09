@@ -33,7 +33,7 @@ const ExpandableText = () => {
   }
 
   return (
-    <section id="about" className="expandable-text-section">
+    <section id="about" className="expandable-text-section section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -82,30 +82,6 @@ const ExpandableText = () => {
             </motion.button>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="stats-grid"
-          >
-            <div className="stat-item">
-              <div className="stat-number">3x</div>
-              <div className="stat-label">Faster Rendering</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">50%</div>
-              <div className="stat-label">Less Learning Curve</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">8K</div>
-              <div className="stat-label">Video Support</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">99.9%</div>
-              <div className="stat-label">Uptime</div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

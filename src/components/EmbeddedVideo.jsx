@@ -101,7 +101,7 @@ const EmbeddedVideo = () => {
   }
 
   return (
-    <section id="video" className="embedded-video-section">
+    <section id="video" className="embedded-video-section section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

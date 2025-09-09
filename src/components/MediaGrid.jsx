@@ -112,7 +112,7 @@ const MediaGrid = () => {
   }
 
   return (
-    <section id="gallery" className="media-grid-section">
+    <section id="gallery" className="media-grid-section section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

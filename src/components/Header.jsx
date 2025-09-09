@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Moon, Sun } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import './Header.css'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,9 +19,6 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-  }
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
@@ -52,14 +48,6 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button 
-            onClick={toggleDarkMode}
-            className="theme-toggle"
-            aria-label="Toggle theme"
-          >
-            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-          </button>
-
           <button 
             onClick={toggleMenu}
             className="menu-toggle"

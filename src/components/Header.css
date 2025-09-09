@@ -102,24 +102,6 @@
   gap: 1rem;
 }
 
-.theme-toggle {
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  color: var(--text-primary);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
-}
 
 .menu-toggle {
   display: none;

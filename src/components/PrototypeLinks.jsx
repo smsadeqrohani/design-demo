@@ -113,7 +113,7 @@ const PrototypeLinks = () => {
   }
 
   return (
-    <section id="prototypes" className="prototype-links-section">
+    <section id="prototypes" className="prototype-links-section section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

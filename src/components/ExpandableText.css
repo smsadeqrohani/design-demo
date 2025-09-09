@@ -1,7 +1,4 @@
 .expandable-text-section {
-  padding: var(--section-padding);
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-  position: relative;
 }
 
 .expandable-content {
@@ -68,70 +65,8 @@
   box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
 }
 
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.stat-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-  border-radius: 1rem;
-  transition: all var(--transition-normal);
-  position: relative;
-  overflow: hidden;
-}
-
-.stat-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  transform: scaleX(0);
-  transition: transform var(--transition-normal);
-}
-
-.stat-item:hover::before {
-  transform: scaleX(1);
-}
-
-.stat-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.stat-number {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 0.5rem;
-}
-
-.stat-label {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  font-weight: 500;
-}
 
 /* Responsive Design */
-@media (max-width: 1024px) {
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-}
-
 @media (max-width: 768px) {
   .expandable-text-section {
     padding: 3rem 0;
@@ -146,23 +81,6 @@
     font-size: 1rem;
     line-height: 1.7;
   }
-
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .stat-item {
-    padding: 1rem;
-  }
-
-  .stat-number {
-    font-size: 2rem;
-  }
-
-  .stat-label {
-    font-size: 0.875rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -172,13 +90,5 @@
 
   .text-body {
     font-size: 0.9rem;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stat-number {
-    font-size: 1.75rem;
   }
 }

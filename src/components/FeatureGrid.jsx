@@ -134,7 +134,7 @@ const FeatureGrid = () => {
   }
 
   return (
-    <section id="features" className="feature-grid-section">
+    <section id="features" className="feature-grid-section section">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

@@ -1,6 +1,4 @@
 .prototype-links-section {
-  padding: var(--section-padding);
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-tertiary) 100%);
 }
 
 .section-subtitle {

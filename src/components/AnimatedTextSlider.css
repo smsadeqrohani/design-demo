@@ -1,11 +1,10 @@
 .animated-text-section {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
 }
 
 .text-slider-container {
@@ -48,22 +47,6 @@
   margin-left: 0.1em;
 }
 
-.subtitle {
-  font-size: 1.25rem;
-  color: var(--text-secondary);
-  margin-bottom: 2.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .floating-elements {
   position: absolute;
@@ -122,7 +105,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .animated-text-section {
-    min-height: 80vh;
+    min-height: 50vh;
     padding: 2rem 0;
   }
 
@@ -131,20 +114,6 @@
     margin-bottom: 1rem;
   }
 
-  .subtitle {
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-  }
-
-  .cta-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-buttons .btn {
-    width: 100%;
-    max-width: 300px;
-  }
 
   .floating-circle {
     opacity: 0.05;
@@ -171,11 +140,4 @@
     font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
 
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  .cta-buttons {
-    gap: 0.75rem;
-  }
 }
