@@ -28,7 +28,7 @@
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
-  background: black;
+  background: #080808;
   cursor: pointer;
 }
 
@@ -193,19 +193,19 @@
 
 /* Fullscreen Styles */
 .video-wrapper:fullscreen {
-  background: black;
+  background: #080808;
 }
 
 .video-wrapper:-webkit-full-screen {
-  background: black;
+  background: #080808;
 }
 
 .video-wrapper:-moz-full-screen {
-  background: black;
+  background: #080808;
 }
 
 .video-wrapper:-ms-fullscreen {
-  background: black;
+  background: #080808;
 }
 
 /* Responsive Design */

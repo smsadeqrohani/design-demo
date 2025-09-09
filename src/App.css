@@ -25,19 +25,19 @@ button:active {
 
 :root {
   /* Primary Colors */
-  --primary-color: #6366f1;
-  --primary-dark: #4f46e5;
-  --primary-light: #818cf8;
+  --primary-color: #A8233C;
+  --primary-dark: #8B1E33;
+  --primary-light: #C42A4A;
   
   /* Secondary Colors */
-  --secondary-color: #ec4899;
-  --secondary-dark: #db2777;
-  --secondary-light: #f472b6;
+  --secondary-color: #007A7A;
+  --secondary-dark: #005F5F;
+  --secondary-light: #009595;
   
   /* Dark Theme Colors */
-  --bg-primary: #0f0f23;
-  --bg-secondary: #1a1a2e;
-  --bg-tertiary: #16213e;
+  --bg-primary: #080808;
+  --bg-secondary: #121212;
+  --bg-tertiary: #1a1a1a;
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
@@ -45,7 +45,7 @@ button:active {
   /* Glass Effect */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --glass-shadow: 0 8px 32px 0 #4a4b4b3d;
   
   /* Spacing */
   --section-padding: 3rem 0;
@@ -76,7 +76,7 @@ body {
   min-height: 100vh;
   width: 100%;
   max-width: 100vw;
-  background: #0f0f23;
+  background: #080808;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,7 +152,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 10px 25px rgba(168, 35, 60, 0.3);
 }
 
 .btn-secondary {
@@ -162,7 +162,7 @@ body {
 
 .btn-secondary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 122, 122, 0.3);
 }
 
 .btn-glass {
