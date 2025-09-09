@@ -24,9 +24,9 @@ const MediaGrid = () => {
     {
       id: 3,
       type: 'gif',
-      src: 'https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif',
-      title: 'GIF متحرک',
-      description: 'نمایش انیمیشن خلاقانه'
+      src: '/test-gif.gif',
+      title: 'GIF تست',
+      description: 'GIF محلی برای تست'
     },
     {
       id: 4,
