@@ -30,6 +30,9 @@
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   border: 1px solid var(--glass-border);
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card::before {
@@ -53,71 +56,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.feature-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.feature-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-}
-
-.feature-icon.yellow {
-  background: linear-gradient(135deg, #fbbf24, #f59e0b);
-}
-
-.feature-icon.purple {
-  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
-}
-
-.feature-icon.blue {
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-}
-
-.feature-icon.green {
-  background: linear-gradient(135deg, #10b981, #059669);
-}
-
-.feature-icon.cyan {
-  background: linear-gradient(135deg, #06b6d4, #0891b2);
-}
-
-.feature-icon.pink {
-  background: linear-gradient(135deg, #ec4899, #db2777);
-}
-
-.feature-icon.orange {
-  background: linear-gradient(135deg, #f97316, #ea580c);
-}
-
-.feature-icon.teal {
-  background: linear-gradient(135deg, #14b8a6, #0d9488);
-}
-
-.feature-icon.indigo {
-  background: linear-gradient(135deg, #6366f1, #4f46e5);
-}
-
-.feature-status {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  border: 1px solid var(--glass-border);
-}
 
 .feature-content {
   margin-bottom: 1rem;
@@ -136,18 +74,44 @@
   font-size: 0.9rem;
 }
 
-.feature-action {
+.feature-buttons {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--primary-color);
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: all var(--transition-fast);
+  gap: 0.75rem;
+  margin-top: auto;
 }
 
-.feature-card:hover .feature-action {
-  color: var(--primary-light);
+.feature-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.feature-btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+}
+
+.feature-btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+  transform: translateY(-2px);
+}
+
+.feature-btn-secondary {
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+}
+
+.feature-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Feature Modal */
@@ -186,34 +150,11 @@
   border-bottom: 1px solid var(--glass-border);
 }
 
-.feature-modal-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.feature-modal-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 .feature-modal-title h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 0.25rem;
-}
-
-.feature-modal-status {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .feature-modal-close {
@@ -278,11 +219,7 @@
 
   .feature-card {
     padding: 1rem;
-  }
-
-  .feature-icon {
-    width: 2.5rem;
-    height: 2.5rem;
+    min-height: 200px;
   }
 
   .feature-title {
@@ -327,11 +264,16 @@
 
   .feature-card {
     padding: 0.75rem;
+    min-height: 180px;
   }
 
-  .feature-icon {
-    width: 2rem;
-    height: 2rem;
+  .feature-buttons {
+    gap: 0.5rem;
+  }
+
+  .feature-btn {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.8rem;
   }
 
   .feature-title {
@@ -344,10 +286,5 @@
 
   .feature-modal-title h3 {
     font-size: 1.25rem;
-  }
-
-  .feature-modal-icon {
-    width: 2.5rem;
-    height: 2.5rem;
   }
 }

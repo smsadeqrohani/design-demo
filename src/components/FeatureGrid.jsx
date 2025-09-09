@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, CheckCircle, Star, Zap, Palette, Users, Shield, Globe, Smartphone } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import './FeatureGrid.css'
 
 const FeatureGrid = () => {
@@ -11,119 +11,67 @@ const FeatureGrid = () => {
       id: 1,
       title: 'Performance',
       description: 'Lightning-fast rendering and processing',
-      icon: <Zap size={24} />,
-      color: 'yellow',
       link: 'https://figma.com/feature/performance',
-      details: 'Experience 3x faster rendering with our optimized engine. Real-time preview for 4K and 8K content.',
-      status: 'active'
+      details: 'Experience 3x faster rendering with our optimized engine. Real-time preview for 4K and 8K content.'
     },
     {
       id: 2,
       title: 'Design System',
       description: 'Consistent and modern interface',
-      icon: <Palette size={24} />,
-      color: 'purple',
       link: 'https://figma.com/feature/design',
-      details: 'Comprehensive design system with glass morphism effects and dark theme optimization.',
-      status: 'active'
+      details: 'Comprehensive design system with glass morphism effects and dark theme optimization.'
     },
     {
       id: 3,
       title: 'Collaboration',
       description: 'Real-time team collaboration',
-      icon: <Users size={24} />,
-      color: 'blue',
       link: 'https://figma.com/feature/collaboration',
-      details: 'Advanced collaboration tools with real-time editing, commenting, and version control.',
-      status: 'beta'
+      details: 'Advanced collaboration tools with real-time editing, commenting, and version control.'
     },
     {
       id: 4,
       title: 'Security',
       description: 'Enterprise-grade security',
-      icon: <Shield size={24} />,
-      color: 'green',
       link: 'https://figma.com/feature/security',
-      details: 'Bank-level security with end-to-end encryption and secure cloud storage.',
-      status: 'active'
+      details: 'Bank-level security with end-to-end encryption and secure cloud storage.'
     },
     {
       id: 5,
       title: 'Cross-Platform',
       description: 'Works on all devices',
-      icon: <Globe size={24} />,
-      color: 'cyan',
       link: 'https://figma.com/feature/cross-platform',
-      details: 'Seamless experience across desktop, web, and mobile platforms.',
-      status: 'active'
+      details: 'Seamless experience across desktop, web, and mobile platforms.'
     },
     {
       id: 6,
       title: 'Mobile App',
       description: 'Native mobile experience',
-      icon: <Smartphone size={24} />,
-      color: 'pink',
       link: 'https://figma.com/feature/mobile',
-      details: 'Full-featured mobile app with touch-optimized interface and offline capabilities.',
-      status: 'coming-soon'
+      details: 'Full-featured mobile app with touch-optimized interface and offline capabilities.'
     },
     {
       id: 7,
       title: 'AI Features',
       description: 'Smart editing assistance',
-      icon: <Star size={24} />,
-      color: 'orange',
       link: 'https://figma.com/feature/ai',
-      details: 'AI-powered color correction, audio mixing, and intelligent scene detection.',
-      status: 'beta'
+      details: 'AI-powered color correction, audio mixing, and intelligent scene detection.'
     },
     {
       id: 8,
       title: 'Cloud Sync',
       description: 'Automatic cloud backup',
-      icon: <CheckCircle size={24} />,
-      color: 'teal',
       link: 'https://figma.com/feature/cloud',
-      details: 'Automatic cloud synchronization with unlimited storage and version history.',
-      status: 'active'
+      details: 'Automatic cloud synchronization with unlimited storage and version history.'
     },
     {
       id: 9,
       title: 'API Access',
       description: 'Developer-friendly APIs',
-      icon: <ExternalLink size={24} />,
-      color: 'indigo',
       link: 'https://figma.com/feature/api',
-      details: 'Comprehensive REST API for custom integrations and workflow automation.',
-      status: 'coming-soon'
+      details: 'Comprehensive REST API for custom integrations and workflow automation.'
     }
   ]
 
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'active':
-        return 'var(--primary-color)'
-      case 'beta':
-        return 'var(--secondary-color)'
-      case 'coming-soon':
-        return 'var(--text-muted)'
-      default:
-        return 'var(--text-muted)'
-    }
-  }
-
-  const getStatusText = (status) => {
-    switch (status) {
-      case 'active':
-        return 'Live'
-      case 'beta':
-        return 'Beta'
-      case 'coming-soon':
-        return 'Coming Soon'
-      default:
-        return 'Unknown'
-    }
-  }
 
   const openFeature = (feature) => {
     setSelectedFeature(feature)
@@ -158,26 +106,18 @@ const FeatureGrid = () => {
                 className="feature-card glass"
                 onClick={() => openFeature(feature)}
               >
-                <div className="feature-header">
-                  <div className={`feature-icon ${feature.color}`}>
-                    {feature.icon}
-                  </div>
-                  <div 
-                    className="feature-status"
-                    style={{ color: getStatusColor(feature.status) }}
-                  >
-                    {getStatusText(feature.status)}
-                  </div>
-                </div>
-
                 <div className="feature-content">
                   <h3 className="feature-title">{feature.title}</h3>
                   <p className="feature-description">{feature.description}</p>
                 </div>
 
-                <div className="feature-action">
-                  <span className="feature-link-text">Check Feature</span>
-                  <ExternalLink size={16} />
+                <div className="feature-buttons">
+                  <button className="feature-btn feature-btn-primary">
+                    Prototype
+                  </button>
+                  <button className="feature-btn feature-btn-secondary">
+                    Help
+                  </button>
                 </div>
               </motion.div>
             ))}
@@ -205,18 +145,7 @@ const FeatureGrid = () => {
             >
               <div className="feature-modal-header">
                 <div className="feature-modal-title">
-                  <div className={`feature-modal-icon ${selectedFeature.color}`}>
-                    {selectedFeature.icon}
-                  </div>
-                  <div>
-                    <h3>{selectedFeature.title}</h3>
-                    <div 
-                      className="feature-modal-status"
-                      style={{ color: getStatusColor(selectedFeature.status) }}
-                    >
-                      {getStatusText(selectedFeature.status)}
-                    </div>
-                  </div>
+                  <h3>{selectedFeature.title}</h3>
                 </div>
                 <button
                   onClick={closeFeature}
