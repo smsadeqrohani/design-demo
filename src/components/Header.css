@@ -27,6 +27,11 @@
   width: 100%;
 }
 
+/* RTL Support - Ensure proper RTL layout */
+[dir="rtl"] .header-container {
+  flex-direction: row-reverse;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -66,15 +71,28 @@
   padding: 0;
 }
 
+/* RTL Support - Navigation order is already correct in HTML */
+
 .nav-link {
   background: none;
   border: none;
+  outline: none;
   color: var(--text-primary);
   font-weight: 500;
   cursor: pointer;
   transition: all var(--transition-fast);
   position: relative;
   padding: 0.5rem 0;
+}
+
+.nav-link:focus {
+  outline: none;
+  border: none;
+}
+
+.nav-link:active {
+  outline: none;
+  border: none;
 }
 
 .nav-link::after {
@@ -86,6 +104,12 @@
   height: 2px;
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   transition: width var(--transition-normal);
+}
+
+/* RTL Support */
+[dir="rtl"] .nav-link::after {
+  left: auto;
+  right: 0;
 }
 
 .nav-link:hover::after {
@@ -139,6 +163,12 @@
     transition: all var(--transition-normal);
   }
 
+  /* RTL Support for mobile nav */
+  [dir="rtl"] .nav {
+    left: 0;
+    right: 0;
+  }
+
   .nav.nav-open {
     transform: translateY(0);
     opacity: 1;
@@ -149,6 +179,11 @@
     flex-direction: column;
     gap: 0;
     padding: 1rem 0;
+  }
+
+  /* RTL Support for mobile */
+  [dir="rtl"] .nav-list {
+    flex-direction: column;
   }
 
   .nav-link {

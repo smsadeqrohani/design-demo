@@ -11,64 +11,64 @@ const MediaGrid = () => {
       id: 1,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1489599803006-2b0b4b5b5b5b?w=800&h=450&fit=crop',
-      title: 'Cinematic Shot 1',
-      description: 'Beautiful landscape photography'
+      title: 'تصویر سینمایی 1',
+      description: 'عکاسی منظره زیبا'
     },
     {
       id: 2,
       type: 'video',
       src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
-      title: 'Sample Video 1',
-      description: 'High quality video content'
+      title: 'نمونه ویدیو 1',
+      description: 'محتوای ویدیویی با کیفیت بالا'
     },
     {
       id: 3,
       type: 'gif',
       src: 'https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif',
-      title: 'Animated GIF',
-      description: 'Creative animation showcase'
+      title: 'GIF متحرک',
+      description: 'نمایش انیمیشن خلاقانه'
     },
     {
       id: 4,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=450&fit=crop',
-      title: 'Cinematic Shot 2',
-      description: 'Professional filmmaking'
+      title: 'تصویر سینمایی 2',
+      description: 'فیلمسازی حرفه‌ای'
     },
     {
       id: 5,
       type: 'video',
       src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
-      title: 'Sample Video 2',
-      description: 'Creative video editing'
+      title: 'نمونه ویدیو 2',
+      description: 'ویرایش ویدیو خلاقانه'
     },
     {
       id: 6,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&h=450&fit=crop',
-      title: 'Cinematic Shot 3',
-      description: 'Artistic composition'
+      title: 'تصویر سینمایی 3',
+      description: 'ترکیب‌بندی هنری'
     },
     {
       id: 7,
       type: 'gif',
       src: 'https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif',
-      title: 'Motion Graphics',
-      description: 'Dynamic visual effects'
+      title: 'گرافیک متحرک',
+      description: 'افکت‌های بصری پویا'
     },
     {
       id: 8,
       type: 'video',
       src: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
-      title: 'Sample Video 3',
-      description: 'Action-packed content'
+      title: 'نمونه ویدیو 3',
+      description: 'محتوای پر از اکشن'
     },
     {
       id: 9,
       type: 'image',
       src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop',
-      title: 'Cinematic Shot 4',
-      description: 'Stunning visual storytelling'
+      title: 'تصویر سینمایی 4',
+      description: 'داستان‌سرایی بصری خیره‌کننده'
     }
   ]
 
@@ -120,7 +120,7 @@ const MediaGrid = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Media Gallery</h2>
+          <h2 className="section-title">گالری رسانه</h2>
           
           <div className="media-grid">
             {mediaItems.map((item, index) => (

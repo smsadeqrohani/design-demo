@@ -109,9 +109,9 @@ const EmbeddedVideo = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Design Overview</h2>
+          <h2 className="section-title">نمای کلی طراحی</h2>
           <p className="section-subtitle">
-            Take a comprehensive tour of our redesigned interface and discover the new features
+            تور جامعی از رابط بازطراحی شده ما بگیرید و ویژگی‌های جدید را کشف کنید
           </p>
 
           <div className="video-container glass">
@@ -188,7 +188,7 @@ const EmbeddedVideo = () => {
                   <div className="play-button">
                     <Play size={60} />
                   </div>
-                  <p className="play-text">Click to play overview video</p>
+                  <p className="play-text">برای پخش ویدیو کلیک کنید</p>
                 </motion.div>
               )}
             </div>

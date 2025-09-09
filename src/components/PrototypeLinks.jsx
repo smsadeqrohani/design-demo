@@ -9,8 +9,8 @@ const PrototypeLinks = () => {
   const mainPrototypes = [
     {
       id: 1,
-      title: 'Main Prototype',
-      description: 'Complete redesign showcase with all new features',
+      title: 'نمونه اصلی',
+      description: 'نمایش کامل بازطراحی با تمام ویژگی‌های جدید',
       link: 'https://figma.com/prototype/main',
       icon: <Palette size={24} />,
       color: 'primary'
@@ -20,87 +20,87 @@ const PrototypeLinks = () => {
   const tutorials = [
     {
       id: 1,
-      title: 'Getting Started Guide',
-      description: 'Learn the basics of the new interface and navigation',
+      title: 'راهنمای شروع',
+      description: 'اصول رابط جدید و ناوبری را یاد بگیرید',
       content: `
-        Welcome to Filmnete V2! This tutorial will guide you through the new interface.
+        به فیلم‌نت V2 خوش آمدید! این آموزش شما را در رابط جدید راهنمایی می‌کند.
         
-        Key Features:
-        • Streamlined navigation with intuitive menu structure
-        • Enhanced editing tools with real-time preview
-        • Improved collaboration features for team projects
-        • Advanced color grading and audio mixing capabilities
+        ویژگی‌های کلیدی:
+        • ناوبری ساده‌شده با ساختار منوی شهودی
+        • ابزارهای ویرایش پیشرفته با پیش‌نمایش بلادرنگ
+        • ویژگی‌های همکاری بهبود یافته برای پروژه‌های تیمی
+        • قابلیت‌های پیشرفته درجه‌بندی رنگ و میکس صدا
         
-        Getting Started:
-        1. Create a new project or open an existing one
-        2. Familiarize yourself with the new toolbar layout
-        3. Explore the enhanced timeline features
-        4. Try the new AI-powered editing suggestions
+        شروع کار:
+        1. پروژه جدید ایجاد کنید یا پروژه موجودی را باز کنید
+        2. با چیدمان جدید نوار ابزار آشنا شوید
+        3. ویژگی‌های پیشرفته تایم‌لاین را کاوش کنید
+        4. پیشنهادات ویرایش مبتنی بر هوش مصنوعی را امتحان کنید
         
-        The interface has been completely redesigned for better workflow efficiency.
+        رابط کاملاً بازطراحی شده برای کارایی بهتر گردش کار.
       `,
       icon: <BookOpen size={20} />,
-      duration: '5 min read'
+      duration: '5 دقیقه مطالعه'
     },
     {
       id: 2,
-      title: 'Advanced Features',
-      description: 'Master the professional tools and advanced capabilities',
+      title: 'ویژگی‌های پیشرفته',
+      description: 'ابزارهای حرفه‌ای و قابلیت‌های پیشرفته را تسلط پیدا کنید',
       content: `
-        Advanced Features Tutorial
+        آموزش ویژگی‌های پیشرفته
         
-        Professional Tools:
-        • 4K/8K video editing with real-time preview
-        • Advanced color grading with LUT support
-        • Multi-track audio mixing and mastering
-        • Motion graphics and animation tools
+        ابزارهای حرفه‌ای:
+        • ویرایش ویدیو 4K/8K با پیش‌نمایش بلادرنگ
+        • درجه‌بندی رنگ پیشرفته با پشتیبانی LUT
+        • میکس و مسترینگ صدا چندترکیبی
+        • ابزارهای گرافیک متحرک و انیمیشن
         
-        Workflow Optimization:
-        • Keyboard shortcuts for faster editing
-        • Custom workspace layouts
-        • Batch processing capabilities
-        • Cloud synchronization and backup
+        بهینه‌سازی گردش کار:
+        • میانبرهای صفحه‌کلید برای ویرایش سریع‌تر
+        • چیدمان‌های فضای کار سفارشی
+        • قابلیت‌های پردازش دسته‌ای
+        • همگام‌سازی و پشتیبان‌گیری ابری
         
-        Collaboration Features:
-        • Real-time collaborative editing
-        • Advanced commenting and review system
-        • Version control and project history
-        • Team management and permissions
+        ویژگی‌های همکاری:
+        • ویرایش همکاری بلادرنگ
+        • سیستم کامنت و بررسی پیشرفته
+        • کنترل نسخه و تاریخچه پروژه
+        • مدیریت تیم و مجوزها
         
-        These features are designed for professional filmmakers and content creators.
+        این ویژگی‌ها برای فیلمسازان حرفه‌ای و سازندگان محتوا طراحی شده‌اند.
       `,
       icon: <Play size={20} />,
-      duration: '12 min read'
+      duration: '12 دقیقه مطالعه'
     },
     {
       id: 3,
-      title: 'Design System',
-      description: 'Understand the new design principles and component library',
+      title: 'سیستم طراحی',
+      description: 'اصول طراحی جدید و کتابخانه کامپوننت را درک کنید',
       content: `
-        Design System Overview
+        نمای کلی سیستم طراحی
         
-        Visual Identity:
-        • Modern dark theme with glass morphism effects
-        • Consistent color palette with primary and secondary colors
-        • Typography system optimized for readability
-        • Iconography and illustration style guide
+        هویت بصری:
+        • تم تاریک مدرن با افکت‌های شیشه‌ای
+        • پالت رنگ سازگار با رنگ‌های اصلی و ثانویه
+        • سیستم تایپوگرافی بهینه‌شده برای خوانایی
+        • راهنمای سبک آیکون‌ها و تصاویر
         
-        Component Library:
-        • Reusable UI components for consistent experience
-        • Responsive design patterns for all screen sizes
-        • Accessibility guidelines and best practices
-        • Animation and transition specifications
+        کتابخانه کامپوننت:
+        • کامپوننت‌های UI قابل استفاده مجدد برای تجربه سازگار
+        • الگوهای طراحی پاسخگو برای تمام اندازه‌های صفحه
+        • راهنمای دسترسی و بهترین شیوه‌ها
+        • مشخصات انیمیشن و انتقال
         
-        Brand Guidelines:
-        • Logo usage and variations
-        • Color combinations and contrast ratios
-        • Spacing and layout principles
-        • Voice and tone for copywriting
+        راهنمای برند:
+        • استفاده از لوگو و تغییرات
+        • ترکیبات رنگ و نسبت‌های کنتراست
+        • اصول فاصله‌گذاری و چیدمان
+        • صدا و لحن برای کپی‌نویسی
         
-        The design system ensures consistency across all platforms and touchpoints.
+        سیستم طراحی سازگاری در تمام پلتفرم‌ها و نقاط تماس را تضمین می‌کند.
       `,
       icon: <Palette size={20} />,
-      duration: '8 min read'
+      duration: '8 دقیقه مطالعه'
     }
   ]
 
@@ -121,14 +121,14 @@ const PrototypeLinks = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Prototype Link</h2>
+          <h2 className="section-title">لینک نمونه</h2>
           <p className="section-subtitle">
-            Explore our redesigned prototype
+            نمونه بازطراحی شده ما را کاوش کنید
             <span 
               className="help-link" 
               onClick={() => openTutorial(tutorials[0])}
             >
-              Need help?
+              نیاز به راهنما دارید؟
             </span>
           </p>
 
@@ -210,7 +210,7 @@ const PrototypeLinks = () => {
 
               <div className="tutorial-modal-footer">
                 <button onClick={closeTutorial} className="btn btn-primary">
-                  Got it!
+                  متوجه شدم!
                 </button>
               </div>
             </motion.div>

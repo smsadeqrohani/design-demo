@@ -12,6 +12,11 @@
   line-height: 1.6;
 }
 
+/* RTL Support */
+[dir="rtl"] .section-subtitle {
+  text-align: center;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -198,6 +203,11 @@
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
+}
+
+/* RTL Support */
+[dir="rtl"] .feature-modal-footer {
+  justify-content: flex-start;
 }
 
 .feature-modal-footer .btn {

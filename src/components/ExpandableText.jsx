@@ -7,23 +7,23 @@ const ExpandableText = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
   const fullText = `
-    We redesigned Filmnete from the ground up to provide a more intuitive and powerful filmmaking experience. 
-    Our new interface focuses on simplicity while maintaining all the advanced features that professional filmmakers need.
+    ما فیلم‌نت را از پایه بازطراحی کردیم تا تجربه‌ای شهودی‌تر و قدرتمندتر از فیلمسازی ارائه دهیم. 
+    رابط جدید ما بر سادگی تمرکز دارد در حالی که تمام ویژگی‌های پیشرفته‌ای که فیلمسازان حرفه‌ای نیاز دارند را حفظ می‌کند.
     
-    The redesign process involved extensive user research, feedback collection, and iterative design improvements. 
-    We analyzed thousands of hours of user behavior data to understand pain points and optimize workflows.
+    فرآیند بازطراحی شامل تحقیقات گسترده کاربری، جمع‌آوری بازخورد و بهبودهای تکراری طراحی بود. 
+    ما هزاران ساعت داده رفتار کاربری را تحلیل کردیم تا نقاط درد را درک کرده و گردش کارها را بهینه کنیم.
     
-    Key improvements include a streamlined editing interface, faster rendering times, improved collaboration tools, 
-    and enhanced mobile responsiveness. The new design system ensures consistency across all platforms and devices.
+    بهبودهای کلیدی شامل رابط ویرایش ساده‌شده، زمان‌های رندر سریع‌تر، ابزارهای همکاری بهبود یافته، 
+    و پاسخگویی موبایل بهتر است. سیستم طراحی جدید سازگاری در تمام پلتفرم‌ها و دستگاه‌ها را تضمین می‌کند.
     
-    We've also introduced new AI-powered features for automatic color correction, smart audio mixing, and intelligent 
-    scene detection. These tools help both beginners and professionals create stunning content more efficiently.
+    ما همچنین ویژگی‌های جدید مبتنی بر هوش مصنوعی برای تصحیح رنگ خودکار، میکس هوشمند صدا و تشخیص هوشمند 
+    صحنه معرفی کرده‌ایم. این ابزارها به مبتدیان و حرفه‌ای‌ها کمک می‌کند تا محتوای خیره‌کننده را کارآمدتر ایجاد کنند.
     
-    The platform now supports 4K and 8K video editing with real-time preview, advanced color grading tools, 
-    and seamless integration with popular cloud storage services. Our new rendering engine is 3x faster than before.
+    پلتفرم اکنون ویرایش ویدیو 4K و 8K با پیش‌نمایش بلادرنگ، ابزارهای پیشرفته درجه‌بندی رنگ، 
+    و ادغام بی‌درز با سرویس‌های ذخیره‌سازی ابری محبوب را پشتیبانی می‌کند. موتور رندر جدید ما 3 برابر سریع‌تر از قبل است.
     
-    Collaboration has been completely reimagined with real-time editing capabilities, advanced commenting system, 
-    and project sharing features that make team workflows more efficient than ever.
+    همکاری کاملاً بازطراحی شده با قابلیت‌های ویرایش بلادرنگ، سیستم کامنت پیشرفته، 
+    و ویژگی‌های اشتراک‌گذاری پروژه که گردش کار تیمی را کارآمدتر از همیشه می‌کند.
   `
 
   const previewText = fullText.split('\n').slice(0, 5).join('\n').trim()
@@ -42,7 +42,7 @@ const ExpandableText = () => {
           viewport={{ once: true }}
           className="expandable-content"
         >
-          <h2 className="section-title">Why We Redesigned</h2>
+          <h2 className="section-title">چرا بازطراحی کردیم</h2>
           
           <div className="text-container glass">
             <motion.div
@@ -72,7 +72,7 @@ const ExpandableText = () => {
               onClick={toggleExpanded}
               className="expand-button"
             >
-              <span>{isExpanded ? 'Show Less' : 'Read More'}</span>
+              <span>{isExpanded ? 'کمتر نشان بده' : 'بیشتر بخوان'}</span>
               <motion.div
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.3 }}

@@ -20,6 +20,12 @@
   transition: all var(--transition-fast);
 }
 
+/* RTL Support */
+[dir="rtl"] .help-link {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
 .help-link:hover {
   color: var(--primary-light);
   text-decoration: none;
@@ -222,6 +228,11 @@
   justify-content: flex-end;
 }
 
+/* RTL Support */
+[dir="rtl"] .tutorial-action {
+  justify-content: flex-start;
+}
+
 .tutorial-link-text {
   color: var(--primary-color);
   font-weight: 500;
@@ -332,6 +343,11 @@
   border-top: 1px solid var(--glass-border);
   display: flex;
   justify-content: flex-end;
+}
+
+/* RTL Support */
+[dir="rtl"] .tutorial-modal-footer {
+  justify-content: flex-start;
 }
 
 /* Responsive Design */

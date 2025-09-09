@@ -8,11 +8,11 @@ const AnimatedTextSlider = () => {
   const [isDeleting, setIsDeleting] = useState(false)
 
   const texts = [
-    "Welcome to Filmnete V2",
-    "Redesigned Experience",
-    "Modern Interface",
-    "Enhanced Features",
-    "Better Performance"
+    "به فیلم‌نت V2 خوش آمدید",
+    "تجربه بازطراحی شده",
+    "رابط مدرن",
+    "ویژگی‌های پیشرفته",
+    "عملکرد بهتر"
   ]
 
   useEffect(() => {

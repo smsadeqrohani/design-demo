@@ -47,6 +47,12 @@
   margin-left: 0.1em;
 }
 
+/* RTL Support */
+[dir="rtl"] .cursor {
+  margin-left: 0;
+  margin-right: 0.1em;
+}
+
 
 .floating-elements {
   position: absolute;

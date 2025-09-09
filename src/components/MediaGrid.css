@@ -98,6 +98,12 @@
   transition: all var(--transition-normal);
 }
 
+/* RTL Support */
+[dir="rtl"] .media-actions {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .media-actions:hover {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
@@ -154,6 +160,12 @@
   color: white;
   cursor: pointer;
   transition: all var(--transition-fast);
+}
+
+/* RTL Support */
+[dir="rtl"] .close-button {
+  right: auto;
+  left: 1rem;
 }
 
 .close-button:hover {

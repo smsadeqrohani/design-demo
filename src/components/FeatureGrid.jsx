@@ -9,66 +9,66 @@ const FeatureGrid = () => {
   const features = [
     {
       id: 1,
-      title: 'Performance',
-      description: 'Lightning-fast rendering and processing',
+      title: 'عملکرد',
+      description: 'رندر و پردازش فوق‌العاده سریع',
       link: 'https://figma.com/feature/performance',
-      details: 'Experience 3x faster rendering with our optimized engine. Real-time preview for 4K and 8K content.'
+      details: 'تجربه رندر 3 برابر سریع‌تر با موتور بهینه‌شده ما. پیش‌نمایش بلادرنگ برای محتوای 4K و 8K.'
     },
     {
       id: 2,
-      title: 'Design System',
-      description: 'Consistent and modern interface',
+      title: 'سیستم طراحی',
+      description: 'رابط سازگار و مدرن',
       link: 'https://figma.com/feature/design',
-      details: 'Comprehensive design system with glass morphism effects and dark theme optimization.'
+      details: 'سیستم طراحی جامع با افکت‌های شیشه‌ای و بهینه‌سازی تم تاریک.'
     },
     {
       id: 3,
-      title: 'Collaboration',
-      description: 'Real-time team collaboration',
+      title: 'همکاری',
+      description: 'همکاری تیمی بلادرنگ',
       link: 'https://figma.com/feature/collaboration',
-      details: 'Advanced collaboration tools with real-time editing, commenting, and version control.'
+      details: 'ابزارهای همکاری پیشرفته با ویرایش بلادرنگ، کامنت و کنترل نسخه.'
     },
     {
       id: 4,
-      title: 'Security',
-      description: 'Enterprise-grade security',
+      title: 'امنیت',
+      description: 'امنیت در سطح سازمانی',
       link: 'https://figma.com/feature/security',
-      details: 'Bank-level security with end-to-end encryption and secure cloud storage.'
+      details: 'امنیت در سطح بانک با رمزگذاری سرتاسر و ذخیره‌سازی ابری امن.'
     },
     {
       id: 5,
-      title: 'Cross-Platform',
-      description: 'Works on all devices',
+      title: 'چندپلتفرمه',
+      description: 'کار روی تمام دستگاه‌ها',
       link: 'https://figma.com/feature/cross-platform',
-      details: 'Seamless experience across desktop, web, and mobile platforms.'
+      details: 'تجربه بی‌درز در دسکتاپ، وب و پلتفرم‌های موبایل.'
     },
     {
       id: 6,
-      title: 'Mobile App',
-      description: 'Native mobile experience',
+      title: 'اپ موبایل',
+      description: 'تجربه موبایل بومی',
       link: 'https://figma.com/feature/mobile',
-      details: 'Full-featured mobile app with touch-optimized interface and offline capabilities.'
+      details: 'اپ موبایل کامل با رابط بهینه‌شده لمسی و قابلیت‌های آفلاین.'
     },
     {
       id: 7,
-      title: 'AI Features',
-      description: 'Smart editing assistance',
+      title: 'ویژگی‌های هوش مصنوعی',
+      description: 'کمک ویرایش هوشمند',
       link: 'https://figma.com/feature/ai',
-      details: 'AI-powered color correction, audio mixing, and intelligent scene detection.'
+      details: 'تصحیح رنگ، میکس صدا و تشخیص هوشمند صحنه مبتنی بر هوش مصنوعی.'
     },
     {
       id: 8,
-      title: 'Cloud Sync',
-      description: 'Automatic cloud backup',
+      title: 'همگام‌سازی ابری',
+      description: 'پشتیبان‌گیری خودکار ابری',
       link: 'https://figma.com/feature/cloud',
-      details: 'Automatic cloud synchronization with unlimited storage and version history.'
+      details: 'همگام‌سازی خودکار ابری با ذخیره‌سازی نامحدود و تاریخچه نسخه.'
     },
     {
       id: 9,
-      title: 'API Access',
-      description: 'Developer-friendly APIs',
+      title: 'دسترسی API',
+      description: 'API های دوستدار توسعه‌دهنده',
       link: 'https://figma.com/feature/api',
-      details: 'Comprehensive REST API for custom integrations and workflow automation.'
+      details: 'REST API جامع برای ادغام‌های سفارشی و اتوماسیون گردش کار.'
     }
   ]
 
@@ -90,9 +90,9 @@ const FeatureGrid = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Feature Check</h2>
+          <h2 className="section-title">بررسی ویژگی‌ها</h2>
           <p className="section-subtitle">
-            Explore specific features and capabilities of the new Filmnete platform
+            ویژگی‌ها و قابلیت‌های خاص پلتفرم جدید فیلم‌نت را کاوش کنید
           </p>
 
           <div className="features-grid">
@@ -113,10 +113,10 @@ const FeatureGrid = () => {
 
                 <div className="feature-buttons">
                   <button className="feature-btn feature-btn-primary">
-                    Prototype
+                    نمونه
                   </button>
                   <button className="feature-btn feature-btn-secondary">
-                    Help
+                    راهنما
                   </button>
                 </div>
               </motion.div>
@@ -173,10 +173,10 @@ const FeatureGrid = () => {
                   className="btn btn-primary"
                 >
                   <ExternalLink size={16} />
-                  View Feature
+                  مشاهده ویژگی
                 </a>
                 <button onClick={closeFeature} className="btn btn-glass">
-                  Close
+                  بستن
                 </button>
               </div>
             </motion.div>
