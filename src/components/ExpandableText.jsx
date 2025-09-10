@@ -65,19 +65,20 @@ const ExpandableText = () => {
                 </motion.div>
               </AnimatePresence>
             </motion.div>
+          </div>
 
+          <div className="expand-control">
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               onClick={toggleExpanded}
-              className="expand-button"
+              className="expand-button-simple"
             >
-              <span>{isExpanded ? 'کمتر نشان بده' : 'بیشتر بخوان'}</span>
               <motion.div
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
               >
-                {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                <ChevronDown size={18} />
               </motion.div>
             </motion.button>
           </div>

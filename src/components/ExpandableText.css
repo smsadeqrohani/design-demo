@@ -8,9 +8,10 @@
 }
 
 .text-container {
-  border-radius: 1rem;
+  border-radius: 1rem 1rem 0 0;
   padding: 2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
   position: relative;
   overflow: hidden;
 }
@@ -32,42 +33,40 @@
   overflow: hidden;
 }
 
-.expand-button {
+/* Simple expand control design */
+.expand-control {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  height: 60px;
+  z-index: 10;
+}
+
+.expand-button-simple {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: all var(--transition-normal);
-  position: relative;
-  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
-.expand-button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
+.expand-button-simple:hover {
+  background: #2a2a2a;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
 }
 
-.expand-button:hover::before {
-  left: 100%;
-}
-
-.expand-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(168, 35, 60, 0.3);
+.expand-button-simple svg {
+  color: white;
+  transition: all 0.3s ease;
 }
 
 
@@ -79,21 +78,48 @@
 
   .text-container {
     padding: 1.5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
   }
 
   .text-body {
     font-size: 1rem;
     line-height: 1.7;
   }
+
+  .expand-control {
+    margin-top: -15px;
+    height: 50px;
+  }
+
+  .expand-button-simple {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 @media (max-width: 480px) {
   .text-container {
     padding: 1rem;
+    padding-bottom: 2rem;
   }
 
   .text-body {
     font-size: 0.9rem;
+  }
+
+  .expand-control {
+    margin-top: -10px;
+    height: 45px;
+  }
+
+  .expand-button-simple {
+    width: 34px;
+    height: 34px;
+  }
+
+  .expand-button-simple svg {
+    width: 14px;
+    height: 14px;
   }
 }
