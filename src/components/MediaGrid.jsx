@@ -120,7 +120,7 @@ const MediaGrid = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">گالری رسانه</h2>
+          <h2 className="section-title">فریم هایی از آینده ی فیلم‌نت</h2>
           
           <div className="media-grid">
             {mediaItems.map((item, index) => (

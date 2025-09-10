@@ -109,7 +109,7 @@ const EmbeddedVideo = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">نمای کلی طراحی</h2>
+          <h2 className="section-title">۲۰ ثانیه با فردای فیلم‌نت</h2>
           <p className="section-subtitle">
             تور جامعی از رابط بازطراحی شده ما بگیرید و ویژگی‌های جدید را کشف کنید
           </p>

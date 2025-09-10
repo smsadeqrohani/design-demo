@@ -50,7 +50,7 @@ const ExpandableText = () => {
           viewport={{ once: true }}
           className="expandable-content"
         >
-          <h2 className="section-title">چرا بازطراحی کردیم</h2>
+          <h2 className="section-title">بازطراحی یا عقب‌ماندن از رقابت؟</h2>
           
           <div className="text-container glass">
             <motion.div
