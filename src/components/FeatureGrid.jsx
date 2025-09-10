@@ -10,7 +10,7 @@ const FeatureGrid = () => {
   const features = [
     {
       id: 1,
-      title: 'عملکرد',
+      title: 'صفحه اصلی',
       description: 'رندر و پردازش فوق‌العاده سریع',
       link: 'https://figma.com/feature/performance',
       details: 'تجربه رندر 3 برابر سریع‌تر با موتور بهینه‌شده ما. پیش‌نمایش بلادرنگ برای محتوای 4K و 8K.',
@@ -18,7 +18,7 @@ const FeatureGrid = () => {
     },
     {
       id: 2,
-      title: 'سیستم طراحی',
+      title: 'صفحه محتوای تکی',
       description: 'رابط سازگار و مدرن',
       link: 'https://figma.com/feature/design',
       details: 'سیستم طراحی جامع با افکت‌های شیشه‌ای و بهینه‌سازی تم تاریک.',
@@ -26,7 +26,7 @@ const FeatureGrid = () => {
     },
     {
       id: 3,
-      title: 'همکاری',
+      title: 'صفحه کودک و نوجوان',
       description: 'همکاری تیمی بلادرنگ',
       link: 'https://figma.com/feature/collaboration',
       details: 'ابزارهای همکاری پیشرفته با ویرایش بلادرنگ، کامنت و کنترل نسخه.',
@@ -34,7 +34,7 @@ const FeatureGrid = () => {
     },
     {
       id: 4,
-      title: 'امنیت',
+      title: 'پخش زنده',
       description: 'امنیت در سطح سازمانی',
       link: 'https://figma.com/feature/security',
       details: 'امنیت در سطح بانک با رمزگذاری سرتاسر و ذخیره‌سازی ابری امن.',
@@ -42,7 +42,7 @@ const FeatureGrid = () => {
     },
     {
       id: 5,
-      title: 'چندپلتفرمه',
+      title: 'فیلم‌نت هال',
       description: 'کار روی تمام دستگاه‌ها',
       link: 'https://figma.com/feature/cross-platform',
       details: 'تجربه بی‌درز در دسکتاپ، وب و پلتفرم‌های موبایل.',
@@ -50,7 +50,7 @@ const FeatureGrid = () => {
     },
     {
       id: 6,
-      title: 'اپ موبایل',
+      title: 'سینما آنلاین',
       description: 'تجربه موبایل بومی',
       link: 'https://figma.com/feature/mobile',
       details: 'اپ موبایل کامل با رابط بهینه‌شده لمسی و قابلیت‌های آفلاین.',
@@ -58,7 +58,7 @@ const FeatureGrid = () => {
     },
     {
       id: 7,
-      title: 'ویژگی‌های هوش مصنوعی',
+      title: 'باندل',
       description: 'کمک ویرایش هوشمند',
       link: 'https://figma.com/feature/ai',
       details: 'تصحیح رنگ، میکس صدا و تشخیص هوشمند صحنه مبتنی بر هوش مصنوعی.',
@@ -66,7 +66,7 @@ const FeatureGrid = () => {
     },
     {
       id: 8,
-      title: 'همگام‌سازی ابری',
+      title: 'صفحه خرید اشتراک',
       description: 'پشتیبان‌گیری خودکار ابری',
       link: 'https://figma.com/feature/cloud',
       details: 'همگام‌سازی خودکار ابری با ذخیره‌سازی نامحدود و تاریخچه نسخه.',
@@ -74,7 +74,7 @@ const FeatureGrid = () => {
     },
     {
       id: 9,
-      title: 'دسترسی API',
+      title: 'حساب کاربری',
       description: 'API های دوستدار توسعه‌دهنده',
       link: 'https://figma.com/feature/api',
       details: 'REST API جامع برای ادغام‌های سفارشی و اتوماسیون گردش کار.',
