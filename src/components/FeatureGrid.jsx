@@ -112,9 +112,9 @@ const FeatureGrid = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">بررسی ویژگی‌ها</h2>
+          <h2 className="section-title">نگاهی به ویژگی ها جدید فیلم‌نت</h2>
           <p className="section-subtitle">
-            ویژگی‌ها و قابلیت‌های خاص پلتفرم جدید فیلم‌نت را کاوش کنید
+            صفحات و ویژگی های مختلف فیلم‌نت
           </p>
 
           <div className="features-grid">

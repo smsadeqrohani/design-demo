@@ -1,7 +1,39 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ExternalLink, X, Play, BookOpen, Code, Palette } from 'lucide-react'
+import { X, Play, BookOpen, Code, Palette } from 'lucide-react'
 import './PrototypeLinks.css'
+
+// Figma Logo Component
+const FigmaLogo = ({ size = 20 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M12 12C12 9.79086 10.2091 8 8 8C5.79086 8 4 9.79086 4 12C4 14.2091 5.79086 16 8 16C10.2091 16 12 14.2091 12 12Z"
+      fill="#F24E1E"
+    />
+    <path
+      d="M12 4C12 6.20914 10.2091 8 8 8C5.79086 8 4 6.20914 4 4C4 1.79086 5.79086 0 8 0C10.2091 0 12 1.79086 12 4Z"
+      fill="#FF7262"
+    />
+    <path
+      d="M20 12C20 14.2091 18.2091 16 16 16C13.7909 16 12 14.2091 12 12C12 9.79086 13.7909 8 16 8C18.2091 8 20 9.79086 20 12Z"
+      fill="#A259FF"
+    />
+    <path
+      d="M12 20C12 17.7909 10.2091 16 8 16C5.79086 16 4 17.7909 4 20C4 22.2091 5.79086 24 8 24C10.2091 24 12 22.2091 12 20Z"
+      fill="#1ABCFE"
+    />
+    <path
+      d="M20 4C20 6.20914 18.2091 8 16 8C13.7909 8 12 6.20914 12 4C12 1.79086 13.7909 0 16 0C18.2091 0 20 1.79086 20 4Z"
+      fill="#0ACF83"
+    />
+  </svg>
+)
 
 const PrototypeLinks = () => {
   const [selectedTutorial, setSelectedTutorial] = useState(null)
@@ -152,7 +184,7 @@ const PrototypeLinks = () => {
                   rel="noopener noreferrer"
                   className="prototype-link"
                 >
-                  <ExternalLink size={20} />
+                  <FigmaLogo size={20} />
                 </a>
               </motion.div>
             ))}
