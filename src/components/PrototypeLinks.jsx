@@ -121,7 +121,7 @@ const PrototypeLinks = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">لینک نمونه</h2>
+          <h2 className="section-title">اکران ویژه: از اینجا وارد دنیای جدید فیلم‌نت شو</h2>
           <p className="section-subtitle">
             نمونه بازطراحی شده ما را کاوش کنید
             <span 
@@ -142,9 +142,6 @@ const PrototypeLinks = () => {
                 viewport={{ once: true }}
                 className={`prototype-card glass ${prototype.color}`}
               >
-                <div className="prototype-icon">
-                  {prototype.icon}
-                </div>
                 <div className="prototype-content">
                   <h3 className="prototype-title">{prototype.title}</h3>
                   <p className="prototype-description">{prototype.description}</p>

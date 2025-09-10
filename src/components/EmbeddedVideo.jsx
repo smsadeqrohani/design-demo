@@ -111,7 +111,7 @@ const EmbeddedVideo = () => {
         >
           <h2 className="section-title">۲۰ ثانیه با فردای فیلم‌نت</h2>
           <p className="section-subtitle">
-            تور جامعی از رابط بازطراحی شده ما بگیرید و ویژگی‌های جدید را کشف کنید
+            تحولی سریع، سفری بزرگ؛ این فقط آغاز راه است
           </p>
 
           <div className="video-container glass">
