@@ -9,8 +9,8 @@ const PrototypeLinks = () => {
   const mainPrototypes = [
     {
       id: 1,
-      title: 'نمونه اصلی',
-      description: 'نمایش کامل بازطراحی با تمام ویژگی‌های جدید',
+      title: 'نسخه ی کامل وب',
+      description: 'لینک طراحی تعاملی در فیگما',
       link: 'https://figma.com/prototype/main',
       icon: <Palette size={24} />,
       color: 'primary'
@@ -123,7 +123,7 @@ const PrototypeLinks = () => {
         >
           <h2 className="section-title">اکران ویژه: از اینجا وارد دنیای جدید فیلم‌نت شو</h2>
           <p className="section-subtitle">
-            نمونه بازطراحی شده ما را کاوش کنید
+            نمونه‌ای کامل از آیندهٔ فیلم‌نت؛ همه‌چیز همین‌جا جمع شده است
             <span 
               className="help-link" 
               onClick={() => openTutorial(tutorials[0])}
