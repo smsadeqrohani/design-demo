@@ -25,7 +25,7 @@ const PrototypeLinks = () => {
       id: 1,
       title: 'نسخه ی کامل وب',
       description: 'لینک طراحی تعاملی در فیگما',
-      link: 'https://figma.com/prototype/main',
+      link: 'https://embed.figma.com/proto/sXo1KTdokaeUBqFvoPXA0b/inja?page-id=18240%3A140137&node-id=18243-140138&viewport=115%2C371%2C0.1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=18243%3A140138&embed-host=share',
       icon: <Palette size={24} />,
       color: 'primary'
     }
