@@ -7,9 +7,26 @@
   overflow: hidden;
 }
 
+.animated-text-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/filmnet-logo.svg');
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: 25% auto;
+  background-attachment: fixed;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  opacity: 0.12;
+  z-index: 1;
+}
+
 .text-slider-container {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
@@ -61,7 +78,7 @@
   right: 0;
   bottom: 0;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
 }
 
 .floating-circle {
@@ -114,6 +131,11 @@
     min-height: 50vh;
     padding: 2rem 0;
   }
+  
+  .animated-text-section::before {
+    background-size: 35% auto;
+    background-position: center 25%;
+  }
 
   .animated-text {
     font-size: clamp(2rem, 6vw, 3.5rem);
@@ -142,8 +164,12 @@
 }
 
 @media (max-width: 480px) {
+  .animated-text-section::before {
+    background-size: 40% auto;
+    background-position: center 20%;
+  }
+  
   .animated-text {
     font-size: clamp(1.75rem, 5vw, 2.5rem);
   }
-
 }
