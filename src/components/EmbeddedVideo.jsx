@@ -4,7 +4,7 @@ import { Play, Pause, Volume2, VolumeX, Maximize2, Minimize2 } from 'lucide-reac
 import './EmbeddedVideo.css'
 
 const EmbeddedVideo = () => {
-  const [isPlaying, setIsPlaying] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(true)
   const [isMuted, setIsMuted] = useState(true)
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
@@ -13,7 +13,7 @@ const EmbeddedVideo = () => {
   const videoRef = useRef(null)
   const containerRef = useRef(null)
 
-  const videoSrc = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+  const videoSrc = 'https://s3.thr1.sotoon.ir/qtest/1757770076250655-hq.mp4'
 
   useEffect(() => {
     const video = videoRef.current
@@ -126,6 +126,7 @@ const EmbeddedVideo = () => {
                 src={videoSrc}
                 className="embedded-video"
                 loop
+                autoPlay
                 muted={isMuted}
                 poster="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=1200&h=675&fit=crop"
               />
@@ -178,19 +179,6 @@ const EmbeddedVideo = () => {
                 </div>
               </motion.div>
 
-              {!isPlaying && (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="play-overlay"
-                  onClick={togglePlay}
-                >
-                  <div className="play-button">
-                    <Play size={60} />
-                  </div>
-                  <p className="play-text">برای پخش ویدیو کلیک کنید</p>
-                </motion.div>
-              )}
             </div>
           </div>
 
