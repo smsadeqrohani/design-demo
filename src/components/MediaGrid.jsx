@@ -45,7 +45,7 @@ const MediaGrid = () => {
     {
       id: 6,
       type: 'gif',
-      src: '/gallery_1CXmy9e0.gif',
+      src: '/Gallery-_online-video-cutter.com_.gif',
       title: 'گالری تصاویر',
       description: ''
     },
