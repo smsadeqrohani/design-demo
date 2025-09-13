@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import './Header.css'
-import filmnetLogo from '../../filmnet.png'
+import logoImage from '../../LOGO.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -54,7 +54,7 @@ const Header = () => {
         </nav>
 
         <div className="logo">
-          <img src={filmnetLogo} alt="فیلم‌نت" className="logo-image" />
+          <img src={logoImage} alt="فیلم‌نت" className="logo-image" />
         </div>
       </div>
     </header>
