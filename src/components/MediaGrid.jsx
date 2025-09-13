@@ -10,65 +10,65 @@ const MediaGrid = () => {
     {
       id: 1,
       type: 'gif',
-      src: '/qahve-pedari-exclusive.gif',
+      src: '/qahve-pedari-exclusive-qMAX-sharp.gif',
       title: 'ویجت اختصاصی',
       description: ''
     },
     {
       id: 2,
       type: 'gif',
-      src: '/Sub-plans.gif',
-      title: 'گروه های اشتراک',
+      src: '/Vitrin-small.gif',
+      title: 'ویترین',
       description: ''
     },
     {
       id: 3,
       type: 'gif',
-      src: '/test-gif.gif',
+      src: '/test-gif-8mb-a.gif',
       title: 'ویجت نمایش بلیت اکران آنلاین',
       description: ''
     },
     {
       id: 4,
       type: 'gif',
-      src: '/Podcast.gif',
-      title: 'ویجت محتوای صوتی',
+      src: '/Exclusive-qMAX-sharp.gif',
+      title: 'ویجت اختصاصی ویژه',
       description: ''
     },
     {
       id: 5,
       type: 'gif',
-      src: '/Login-_online-video-cutter.com_.gif',
+      src: '/Login-qULTRA.gif',
       title: 'ورود و ثبت‌نام',
       description: ''
     },
     {
       id: 6,
       type: 'gif',
-      src: '/Gallery-_online-video-cutter.com_.gif',
+      src: '/Gallery-qULTRA.gif',
       title: 'گالری تصاویر',
       description: ''
     },
     {
       id: 7,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'گرافیک متحرک',
-      description: 'افکت‌های بصری پویا'
+      src: '/Sub-plans-qULTRA.gif',
+      title: 'گروه های اشتراکی',
+      description: ''
     },
     {
       id: 8,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'نمونه ویدیو 3',
-      description: 'محتوای پر از اکشن'
+      src: '/Podcast-qULTRA.gif',
+      title: 'ویجت محتوای صوتی',
+      description: ''
     },
     {
       id: 9,
-      type: 'gif',
-      src: '/test-gif.gif',
-      title: 'تصویر سینمایی 4',
-      description: 'داستان‌سرایی بصری خیره‌کننده'
+      type: 'webm',
+      src: '/Episodes-qULTRA.gif',
+      title: 'قسمت های سریال',
+      description: ''
     }
   ]
 
