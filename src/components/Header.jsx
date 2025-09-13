@@ -23,8 +23,16 @@ const Header = () => {
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+    const header = document.querySelector('.header')
+    if (element && header) {
+      const headerHeight = header.offsetHeight
+      const elementPosition = element.offsetTop
+      const offsetPosition = elementPosition - headerHeight - 20 // 20px extra spacing
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
     }
     setIsMenuOpen(false)
   }
@@ -54,7 +62,13 @@ const Header = () => {
         </nav>
 
         <div className="logo">
-          <img src={logoImage} alt="فیلم‌نت" className="logo-image" />
+          <button 
+            onClick={() => scrollToSection('hero')} 
+            className="logo-button"
+            aria-label="Go to home"
+          >
+            <img src={logoImage} alt="فیلم‌نت" className="logo-image" />
+          </button>
         </div>
       </div>
     </header>

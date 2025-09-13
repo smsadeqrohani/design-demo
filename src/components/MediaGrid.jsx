@@ -10,44 +10,44 @@ const MediaGrid = () => {
     {
       id: 1,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'تصویر سینمایی 1',
-      description: 'عکاسی منظره زیبا'
+      src: '/qahve-pedari-exclusive.gif',
+      title: 'ویجت اختصاصی',
+      description: ''
     },
     {
       id: 2,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'نمونه ویدیو 1',
-      description: 'محتوای ویدیویی با کیفیت بالا'
+      src: '/Sub-plans.gif',
+      title: 'گروه های اشتراک',
+      description: ''
     },
     {
       id: 3,
       type: 'gif',
       src: '/test-gif.gif',
-      title: 'GIF تست',
-      description: 'GIF محلی برای تست'
+      title: 'ویجت نمایش بلیت اکران آنلاین',
+      description: ''
     },
     {
       id: 4,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'تصویر سینمایی 2',
-      description: 'فیلمسازی حرفه‌ای'
+      src: '/Podcast.gif',
+      title: 'ویجت محتوای صوتی',
+      description: ''
     },
     {
       id: 5,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'نمونه ویدیو 2',
-      description: 'ویرایش ویدیو خلاقانه'
+      src: '/Login-_online-video-cutter.com_.gif',
+      title: 'ورود و ثبت‌نام',
+      description: ''
     },
     {
       id: 6,
       type: 'gif',
-      src: '/test-gif.gif',
-      title: 'تصویر سینمایی 3',
-      description: 'ترکیب‌بندی هنری'
+      src: '/gallery_1CXmy9e0.gif',
+      title: 'گالری تصاویر',
+      description: ''
     },
     {
       id: 7,
