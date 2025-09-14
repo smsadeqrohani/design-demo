@@ -9,7 +9,9 @@ const EmbeddedVideo = () => {
   const [isFullscreen, setIsFullscreen] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [buffered, setBuffered] = useState(0)
   const [showControls, setShowControls] = useState(true)
+  const [isSeeking, setIsSeeking] = useState(false)
   const videoRef = useRef(null)
   const containerRef = useRef(null)
 
@@ -21,13 +23,22 @@ const EmbeddedVideo = () => {
 
     const updateTime = () => setCurrentTime(video.currentTime)
     const updateDuration = () => setDuration(video.duration)
+    const updateBuffered = () => {
+      if (video.buffered.length > 0) {
+        setBuffered(video.buffered.end(video.buffered.length - 1))
+      }
+    }
 
     video.addEventListener('timeupdate', updateTime)
     video.addEventListener('loadedmetadata', updateDuration)
+    video.addEventListener('progress', updateBuffered)
+    video.addEventListener('canplay', updateBuffered)
 
     return () => {
       video.removeEventListener('timeupdate', updateTime)
       video.removeEventListener('loadedmetadata', updateDuration)
+      video.removeEventListener('progress', updateBuffered)
+      video.removeEventListener('canplay', updateBuffered)
     }
   }, [])
 
@@ -80,13 +91,27 @@ const EmbeddedVideo = () => {
 
   const handleSeek = (e) => {
     const video = videoRef.current
-    if (!video) return
+    if (!video || duration === 0) return
 
+    setIsSeeking(true)
     const rect = e.currentTarget.getBoundingClientRect()
     const clickX = e.clientX - rect.left
-    const newTime = (clickX / rect.width) * duration
+    const newTime = Math.max(0, Math.min(duration, (clickX / rect.width) * duration))
+    
+    // Ensure we seek from current position to avoid buffering issues
     video.currentTime = newTime
     setCurrentTime(newTime)
+    
+    // Reset seeking state after a short delay
+    setTimeout(() => setIsSeeking(false), 100)
+  }
+
+  const handleSeekStart = () => {
+    setIsSeeking(true)
+  }
+
+  const handleSeekEnd = () => {
+    setIsSeeking(false)
   }
 
   const formatTime = (time) => {
@@ -98,6 +123,14 @@ const EmbeddedVideo = () => {
   const handleMouseMove = () => {
     setShowControls(true)
     setTimeout(() => setShowControls(false), 3000)
+  }
+
+  const handleControlsMouseEnter = () => {
+    setShowControls(true)
+  }
+
+  const handleControlsMouseLeave = () => {
+    setTimeout(() => setShowControls(false), 1000)
   }
 
   return (
@@ -136,8 +169,19 @@ const EmbeddedVideo = () => {
                 animate={{ opacity: showControls ? 1 : 0 }}
                 transition={{ duration: 0.3 }}
                 className="video-controls"
+                onMouseEnter={handleControlsMouseEnter}
+                onMouseLeave={handleControlsMouseLeave}
               >
-                <div className="progress-bar" onClick={handleSeek}>
+                <div 
+                  className="progress-bar" 
+                  onClick={handleSeek}
+                  onMouseDown={handleSeekStart}
+                  onMouseUp={handleSeekEnd}
+                >
+                  <div
+                    className="buffer-fill"
+                    style={{ width: `${(buffered / duration) * 100}%` }}
+                  />
                   <div
                     className="progress-fill"
                     style={{ width: `${(currentTime / duration) * 100}%` }}
