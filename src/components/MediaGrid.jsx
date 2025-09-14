@@ -10,56 +10,56 @@ const MediaGrid = () => {
     {
       id: 1,
       type: 'gif',
-      src: '/qahve-pedari-exclusive-qMAX-sharp.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/qahve-pedari-exclusive 2.gif',
       title: 'ویجت اختصاصی',
       description: ''
     },
     {
       id: 2,
       type: 'gif',
-      src: '/Vitrin-small.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Vitrin-_online-video-cutter.com_.gif',
       title: 'ویترین',
       description: ''
     },
     {
       id: 3,
       type: 'gif',
-      src: '/test-gif-8mb-a.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/test-gif.gif',
       title: 'ویجت نمایش بلیت اکران آنلاین',
       description: ''
     },
     {
       id: 4,
       type: 'gif',
-      src: '/Exclusive-qMAX-sharp.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Exclusive-_online-video-cutter.com_ 3.28.19 PM.gif',
       title: 'ویجت اختصاصی ویژه',
       description: ''
     },
     {
       id: 5,
       type: 'gif',
-      src: '/Login-qULTRA.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Login-_online-video-cutter.com_.gif',
       title: 'ورود و ثبت‌نام',
       description: ''
     },
     {
       id: 6,
       type: 'gif',
-      src: '/Gallery-qULTRA.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Gallery-_online-video-cutter.com_ 4.46.45 PM.gif',
       title: 'گالری تصاویر',
       description: ''
     },
     {
       id: 7,
       type: 'gif',
-      src: '/Sub-plans-qULTRA.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Sub-plans 4.37.07 PM.gif',
       title: 'گروه های اشتراکی',
       description: ''
     },
     {
       id: 8,
       type: 'gif',
-      src: '/Podcast-qULTRA.gif',
+      src: 'https://s3.thr1.sotoon.ir/qtest/Podcast 4.44.07 PM.gif',
       title: 'ویجت محتوای صوتی',
       description: ''
     },
